@@ -1,0 +1,11 @@
+<?php
+    require_once('Visitor.php');
+    require_once('VisitorMenu.php');
+    require_once('Menu.php');
+    require_once('MenuLogin.php');
+    require_once('MenuDaftarKeluhan.php');
+    require_once('MenuTambahKeluhan.php');
+    require_once('MenuEditKeluhan.php');
+    require_once('MenuDaftarKritikSaran.php');
+    require_once('MenuTambahKritikSaran.php');
+    require_once('MenuEditKritikSaran.php');
