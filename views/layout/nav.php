@@ -61,7 +61,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <ul class="navbar-nav ml-auto">
-                        <a href="?Logout" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"  style="margin-right: 30px;padding: 5px 25px 5px 25px;">Logout</a>
+                        <a onclick="javascript: return confirm('Anda yakin ingin Logout ?')" href="?Logout" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"  style="margin-right: 30px;padding: 5px 25px 5px 25px;">Logout</a>
                     </ul>
                     <!-- Topbar Navbar -->
                     <!-- <ul class="navbar-nav ml-auto"> -->

@@ -18,7 +18,7 @@
         public function Read()
         {
             global $koneksi;
-            $sql = "select * from kritik_saran";
+            $sql = "select * from kritik_saran order by created_at desc";
             $result = mysqli_query($koneksi, $sql);
             $cek = mysqli_num_rows($result);
             if($cek > 0)

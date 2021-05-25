@@ -42,11 +42,6 @@
                                 <td><?= $row['tanggal'] ?></td>
                                 <td><?= $row['kritik_saran'] ?></td>
                                 <td>
-                                    <a class="btn btn-primary btn-circle" 
-                                        data-toggle="modal" 
-                                        data-target="#modal-detail<?php echo $row['id']; ?>">
-                                            <i class="fas fa-eye"></i>
-                                    </a>
                                     <a href="?EditKritikSaran=<?=$row['id']?>" class="btn btn-warning btn-circle">
                                         <i class="fas fa-hand-paper"></i>
                                     </a>
@@ -65,45 +60,6 @@
 
 </div>
 <!-- /.container-fluid -->
-<?php
-    if($kritik_saran != null){
-        $no = 1;                            
-        foreach($kritik_saran as $row){
-?>
-<!-- Modal -->
-<div class="modal fade" id="modal-detail<?php echo $row['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Detail Keluhan</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <table class="table table-bordered no-margin">
-                    <tbody>
-                        <tr>
-                            <th>Nama Pelanggan</th>
-                            <td><?= $row['nama_pelanggan'] ?></td>
-                        </tr>
-                        <tr>
-                            <th>Tanggal</th>
-                            <td><?= $row['tanggal'] ?></td>
-                        </tr>
-                        <tr>
-                            <th>Kritik & Saran</th>
-                            <td><?= $row['kritik_saran'] ?></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>                
-            </div>
-        </div>
-    </div>
-</div>
-<?php } }
+<?php 
     include('layout/footer.php');
 ?>

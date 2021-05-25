@@ -26,7 +26,6 @@
                         return TRUE;
                     }
                 }
-                $_SESSION['flash'] = 'Username atau Password Salah !!!';
                 return FALSE;
             }
         }

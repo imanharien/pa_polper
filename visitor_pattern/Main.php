@@ -48,6 +48,7 @@
             }
             else
             {
+                $_SESSION['flash'] = 'Username atau Password Salah !!!';
                 $this->login->accept(new VisitorMenu());
             }
         }

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Halaman Login</title>
+        <title>Web Pengaduan - Login</title>
         <link href="css/style-login.css" rel="stylesheet">
     </head>
     
